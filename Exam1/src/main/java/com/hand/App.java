@@ -26,12 +26,12 @@ public class App
             br.close();
             isr.close();
             is.close();
-            
+
             new File("Exam1/tmp").mkdir();
             new File("Exam2/tmp").mkdir();
             new File("Exam3/tmp").mkdir();
 
-            File file = new File("Exam1/tmp/SampleChapter1.pdf");
+            File file = new File("tmp/SampleChapter1.pdf");
             if (file.exists()){
                 file.delete();
             }
