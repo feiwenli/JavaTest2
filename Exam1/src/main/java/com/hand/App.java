@@ -27,11 +27,19 @@ public class App
             isr.close();
             is.close();
 
-            new File("Exam1/tmp").mkdir();
-            new File("Exam2/tmp").mkdir();
-            new File("Exam3/tmp").mkdir();
+            File f1 = new File("Exam1/tmp");
+            f1.mkdir();
+//            if (f1.mkdir()){
+//                System.out.println("success");
+//            }else {
+//                System.out.println("fail");
+//            }
+            File f2 = new File("Exam2/tmp");
+            f2.mkdir();
+            File f3 = new File("Exam3/tmp");
+            f3.mkdir();
 
-            File file = new File("tmp/SampleChapter1.pdf");
+            File file = new File("Exam1/tmp/SampleChapter1.pdf");
             if (file.exists()){
                 file.delete();
             }
